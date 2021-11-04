@@ -1,0 +1,45 @@
+#container{
+    margin-left: 30%;
+    margin-top: 10%;
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    animation-name: couleurs;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform: scale(0.8);
+}
+#container:hover{
+    animation-play-state: paused;
+}
+@keyframes couleurs {
+    from {
+        background-color: gold;
+        font-size: 20px;
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        background-color: red;
+        font-size: 30px;
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+#container2 {
+    border: black solid 10px;
+    background-color: black;
+    position: absolute;
+    white-space: nowrap;
+    animation: gauchedroite 10s 500ms infinite normal ease-out forwards;
+}
+
+
+@keyframes gauchedroite {
+
+    0%   {left: 0;}
+    50%  {left: 100%;}
+    100% {left: 0;}
+
+}
